@@ -92,7 +92,7 @@ export default function MainScreen ({headerFavoriteCount, foundedPlaces, hotelsD
                 </ul>
               </form>
               <div className="cities__places-list places__list tabs__content">
-                {hotelsData.map((hotel) => HotelCard(hotel))}
+                {hotelsData.map((hotel) => <HotelCard key={hotel.name} {...hotel} />)}
               </div>
             </section>
             <div className="cities__right-section">
