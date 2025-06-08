@@ -2,7 +2,6 @@ export type MainScreenProps = {
   foundedPlaces: number;
   hotelsData: HotelsData;
 };
-
 export type Hotel = {
   imageSource: string;
   price: number;

@@ -53,7 +53,6 @@ export default function FavoritesScreen () {
                       <p className="place-card__type">Apartment</p>
                     </div>
                   </article>
-
                   <article className="favorites__card place-card">
                     <div className="favorites__image-wrapper place-card__image-wrapper">
                       <a href="#">
@@ -87,7 +86,6 @@ export default function FavoritesScreen () {
                   </article>
                 </div>
               </li>
-
               <li className="favorites__locations-items">
                 <div className="favorites__locations locations locations--current">
                   <div className="locations__item">

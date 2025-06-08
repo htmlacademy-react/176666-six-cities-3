@@ -3,7 +3,11 @@ import Header from './header';
 export default function MainEmptyScreen () {
   return (
     <div className="page page--gray page--main">
+<<<<<<< HEAD
       <Header/>
+=======
+      <header/>
+>>>>>>> 48261cb9b2ed474e7ac4e717f556fa2d0c7fd2a8
 
       <main className="page__main page__main--index page__main--index-empty">
         <h1 className="visually-hidden">Cities</h1>
