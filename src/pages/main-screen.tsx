@@ -5,11 +5,7 @@ import Header from './header.tsx';
 export default function MainScreen ({foundedPlaces, hotelsData}: MainScreenProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
-<<<<<<< HEAD
       <Header/>
-=======
-      <header/>
->>>>>>> 48261cb9b2ed474e7ac4e717f556fa2d0c7fd2a8
 
       <main className="page__main page__main--index">
         <h1 className="visually-hidden">Cities</h1>
