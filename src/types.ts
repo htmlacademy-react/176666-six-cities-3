@@ -1,9 +1,7 @@
 export type MainScreenProps = {
-  headerFavoriteCount: number;
   foundedPlaces: number;
   hotelsData: HotelsData;
 };
-
 export type Hotel = {
   imageSource: string;
   price: number;
@@ -14,3 +12,5 @@ export type Hotel = {
 };
 
 export type HotelsData = Hotel[];
+
+export type Result = string | number | null | JSX.Element;
