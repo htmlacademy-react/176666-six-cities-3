@@ -4,61 +4,51 @@ export type AppProps = {
 };
 
 export type City = {
-  title: string;
+  name: string;
   lat: number;
   lng: number;
-  zoom: number;
+  id: number;
 }
 
 export type IconProperties = {
   iconAnchor: IconAnchor;
   iconSize: IconSize;
 }
-
 export type IconSize = L.PointExpression;
-
 export type IconAnchor = L.PointExpression;
-
 export type Result = string | number | null | JSX.Element;
-
 export type Host = {
   avatar: string;
   username: string;
   userStatus: string;
   text: string;
 }
-
 export type Review = {
   id: number;
   avatar: string;
   name: string;
-  date: Date;
+  date: string;
   text: string;
 };
 
 export type Reviews = Review[];
-
 export type Image = {
   id?: number;
   image: string;
 }
-
 export type Feauture = {
   id?: number;
   type: string;
   feauture: string;
 }
-
 export type Option = {
   id?: number;
   option: string;
 }
-
 export type Coordinates = {
   latitude: number;
   longitude: number;
 }
-
 export type Offer = {
   images: Image[];
   imageSource: string;
@@ -79,3 +69,16 @@ export type Offer = {
 };
 
 export type Offers = Offer[];
+
+export type TownsSlice = {
+  currentCity: City;
+}
+
+export type OffersSlice = {
+  offers: Offers;
+}
+
+export type СommonSlice = {
+  towns: TownsSlice;
+  offers: OffersSlice;
+}
