@@ -8,14 +8,13 @@ import { AppRoute, AuthorizationStatus } from '../../constants.ts';
 import PrivateRoute from '../private-route/private-route.tsx';
 import PrivateOfferRoute from '../private-route/private-offer-route.tsx';
 
-
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route
           path={AppRoute.Main}
-          element={<MainScreen/>}
+          element={<MainScreen auth={AuthorizationStatus.NoAuth}/>}
         />
         <Route
           path={AppRoute.Login}
@@ -25,9 +24,9 @@ export default function App() {
           path={AppRoute.Favorites}
           element={
             <PrivateRoute
-              authorizationStatus={AuthorizationStatus.Auth}
+              authorizationStatus={AuthorizationStatus.NoAuth}
             >
-              <FavoritesItemList auth={AuthorizationStatus.Auth}/>
+              <FavoritesItemList/>
             </PrivateRoute>
           }
         />
@@ -35,7 +34,7 @@ export default function App() {
           path={AppRoute.Offer}
           element={
             <PrivateOfferRoute>
-              <OfferScreen auth={AuthorizationStatus.Auth}/>
+              <OfferScreen auth={AuthorizationStatus.NoAuth}/>
             </PrivateOfferRoute>
           }
         />
